@@ -1,1 +1,207 @@
-body{background:#16161a;color:#fffffe;margin:0;padding:0;top:0;font-family:Arial,sans-serif}.navbar-toggler-icon{filter:brightness(0) invert(1)}.hero-section{min-height:100vh;padding:120px 0 60px 0;overflow:hidden}.welcome-text{font-size:1.2rem;line-height:1.8;color:#e0e0e0}h1{font-size:3.5rem;text-shadow:2px 2px 4px rgba(0,0,0,.3)}.hero-image-container{position:relative;height:500px;display:flex;justify-content:center;align-items:center;font-family:Arial,Helvetica,sans-serif}.hero-image{border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.3);transition:all .3s ease}.img-1{position:absolute;width:80%;z-index:2;transform:rotate(-5deg)}.img-2{position:absolute;width:60%;z-index:1;transform:rotate(8deg) translateX(20%)}.hero-buttons .btn{padding:12px 30px;border-radius:30px}.btn-outline-light:hover{background-color:#fffffe;color:#1a1a1a}@media (max-width:768px){h1{font-size:2.5rem}.welcome-text{font-size:1rem}.hero-image-container{height:400px;margin-top:30px}.img-1{width:70%}.img-2{width:60%}.hero-buttons .btn{padding:10px 20px;font-size:1rem}}@media (max-width:576px){.hero-section{padding:100px 0 40px 0}.hero-image-container{height:300px}.hero-buttons .btn{display:block;margin:10px 0;width:100%}}.menu-section{padding:80px 0}.menu-card{transition:transform .3s ease;margin-bottom:30px;border:none;border-radius:15px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,.1)}.menu-card:hover{transform:translateY(-10px)}.card-img-top{height:250px;object-fit:cover}.menu-title{font-size:1.25rem;font-weight:600;margin-bottom:10px;color:#2c3e50}.menu-price{font-size:1.5rem;color:#e74c3c;font-weight:700}.menu-description{color:#7f8c8d;font-size:.9rem;margin-bottom:15px}.rating{color:#f1c40f;margin-bottom:15px}.order-btn{background-color:#2cb67d;border:none;padding:10px 25px;border-radius:25px;transition:all .3s ease}.order-btn:hover{background-color:#27ae60;transform:scale(1.05)}.section-title{position:relative;margin-bottom:60px;text-align:center}.section-title:after{content:"";position:absolute;bottom:-15px;left:50%;transform:translateX(-50%);width:100px;height:3px;background-color:#2ecc71}.badge-special{position:absolute;top:20px;right:20px;background-color:#e74c3c;padding:8px 15px;border-radius:20px;color:#fffffe;font-size:.8rem}.category-badge{background-color:#3498db;color:#fffffe;padding:5px 10px;border-radius:15px;font-size:.8rem;margin-bottom:10px;display:inline-block}.menu-price del{color:#999;margin-right:10px;font-size:.9rem}.promo-price{color:#e63946;font-weight:700;font-size:1.2rem}
+body{
+background: #16161a;
+  color: #fffffe;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+.hero-section {
+  min-height: 100vh;
+  padding: 120px 0 60px 0;
+  overflow: hidden;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-image-container {
+  position: relative;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.img-1 {
+  position: absolute;
+  width: 80%;
+  z-index: 2;
+  transform: rotate(-5deg);
+}
+
+.img-2 {
+  position: absolute;
+  width: 60%;
+  z-index: 1;
+  transform: rotate(8deg) translateX(20%);
+}
+
+.hero-buttons .btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+}
+
+.btn-outline-light:hover {
+  background-color: #fffffe;
+  color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .welcome-text {
+    font-size: 1rem;
+  }
+  .hero-image-container {
+    height: 400px;
+    margin-top: 30px;
+  }
+  .img-1 {
+    width: 70%;
+  }
+  .img-2 {
+    width: 60%;
+  }
+  .hero-buttons .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 100px 0 40px 0;
+  }
+  .hero-image-container {
+    height: 300px;
+  }
+  .hero-buttons .btn {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+  }
+}
+
+.menu-section {
+    padding: 60px 0;
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1px; /* Jarak antar kartu */
+  justify-content: center;
+  }
+
+  .menu-card {
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Membatasi lebar card */
+  }
+
+  .menu-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .card-img-top {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .menu-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+
+  .menu-price {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    font-weight: 700;
+  }
+
+  .menu-description {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .badge-special {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e74c3c;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fffffe;
+    font-size: 0.8rem;
+  }
+
+  .order-btn {
+    background-color: #2cb67d;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+
+  .order-btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    .menu-section .row {
+      justify-content: center;
+    }
+    .menu-card {
+      max-width: 280px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .menu-card {
+      max-width: 240px;
+      margin-bottom: 20px;
+    }
+    .card-img-top {
+      height: 120px;
+    }
+    .menu-title {
+      font-size: 1rem;
+    }
+    .menu-price {
+      font-size: 1rem;
+    }
+  }
+
+  .promo-section{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
